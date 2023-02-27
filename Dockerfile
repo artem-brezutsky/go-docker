@@ -15,4 +15,5 @@ FROM alpine
 WORKDIR /build
 
 COPY --from=builder /build/ /build/
+
 CMD ["./go-app"]
