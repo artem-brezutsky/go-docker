@@ -8,6 +8,6 @@ COPY main.go .
 
 RUN go mod download
 RUN go mod tidy
-RUN GOOS=linux go build -o hello main.go
+RUN GOOS=linux go build -o go-app main.go
 
-CMD ["./hello"]
+CMD ["./go-app"]
